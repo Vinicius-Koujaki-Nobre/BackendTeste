@@ -46,17 +46,17 @@ routes.get("/ex", (req,res) =>{
             {
                 id: "1",
                 name: "batata",
-                img: "https://organicosinbox.com.br/produto/batata-inglesa-500g/"
+                img: "https://organicosinbox.com.br/wp-content/uploads/2020/11/batata-inglesa-organica.jpg"
             },
             {
                 id: "2",
                 name: "cabelo",
-                img: "https://at.pinterest.com/pin/304415256072780385/"
+                img: "https://www.fiquediva.com.br/-/media/project/loreal/brand-sites/fiquediva/usa/pt-br/articles/blog/2024/tipos-de-cabelo/cabelos-ondulados/cabelo-ondulado.jpg?rev=b3d5315c059c4b9ca7370f57a3e27078"
             },
             {
                 id: "3",
                 name: "igor3k",
-                img: "https://acesse.one/yeBmt"
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_hCdPAc0tHj1CyteYuUlDeLEpQfa8IY4gXZjSVLlBObZuS33lw8GahS-sYOzNVwZKwrQ&usqp=CAU"
             }
         ]
     })
