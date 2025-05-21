@@ -5,24 +5,24 @@ const prisma = new PrismaClient()
 
 export default {
     create : async(req: Request, res: Response) => {
-        const list = await prisma.list.create({data: req.body})
-        return res.status(201).json(list)
+        const item = await prisma.list.create({data: req.body})
+        return res.status(201).json(item)
     },
 
     read : async(req: Request, res: Response) => {
-        const lists = await prisma.list.findMany({select: {image: true, description: true, price: true, quantity: true}})
-        return res.status(200).json(lists)
+        const items = await prisma.list.findMany({select: {image: true, description: true, price: true, quantity: true}})
+        return res.status(200).json(items)
     },
 
     update : async(req: Request, res: Response) => {
         const id = req.params.id
-        const list = await prisma.list.update({data: req.body, where: {id: +id}})
-        return res.status(200).json(list)   
+        const item = await prisma.list.update({data: req.body, where: {id: +id}})
+        return res.status(200).json(item)   
     },
 
     delete : async(req: Request, res: Response) => {
         const id = req.params.id
-        const list= await prisma.list.delete({where: {id: +id}})
-        return res.status(200).json(list)
+        const item = await prisma.list.delete({where: {id: +id}})
+        return res.status(200).json(item)
     }
 }
